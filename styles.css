@@ -375,16 +375,16 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 4%;
-
+    width: 60%;
+    height: auto;
     border: 3px solid #00505a;
-    padding: 10%;
+    padding: 8% 8% 8% 8%;
     border-radius: 10px;
     background-color: #111827;
 
 }
 .trending-header {
     font-size: clamp(0.6rem, 2vw, 1.5rem);
-    margin-bottom: 5%;
 }
 
 .trending-section {
@@ -392,7 +392,7 @@ hr {
     align-items: center;
     justify-content: left;
     gap: 4%;
-
+    font-size: clamp(0.6rem, 1vw, 1.3rem) ;
 }
 .trending-section img {
     height: 4rem;
@@ -401,4 +401,14 @@ hr {
 .trending-section .account {
     margin-bottom: 10%;
     color: #9ca3af;
+}
+
+@media screen and (max-width: 600px) {
+    .trending-section img {
+        height: 2rem;
+    }
+    .trending {
+        margin-top: 20%;
+        height: 50%;
+    }
 }
