@@ -307,6 +307,7 @@ h2.projects{
 @media screen and (max-width: 600px) {
     .project-card {
         width: 100%; /* Each card takes full width, resulting in one card per row */
-        height: 20%;
+        height: 60%;
+        margin: 3%;
     }
 }
