@@ -243,25 +243,25 @@ h2.projects{
 }
 .project-cards{
     display: flex;
-    height: 80%;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-around;
+    height: 45%;
 }
 .project-card{
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 50%;
+    height: 100%;
     align-items: center;
-    gap: 4%;
     font-size: clamp(0.6rem, 1.5vw, 1.2rem);
 }
+
 .img-container {
     border: none;
     border-radius: 20%;
     overflow: hidden; /* Hide parts of the image that exceed the container */
     width: 80%;
+    height: clamp(8rem, 30vw, 18rem); 
 }
 
 .img-container img {
@@ -269,7 +269,6 @@ h2.projects{
     height: 100%; /* Set height to fill the container */
     object-fit: cover; /* Ensures the image covers the area, might crop */
     object-position: 20%; /* Adjusts the focal point slightly to the right of the center */
-
 }
 
 @media screen and (max-width: 600px) {
