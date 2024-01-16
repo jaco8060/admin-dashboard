@@ -9,6 +9,55 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="main-container">
+      <div class="sidebar">
+        <div class="title-group">
+          <img
+            src="img/dashboard-logo.svg"
+            alt="dashboard-logo"
+            id="dashboard-icon"
+          />
+          <h2 class="title">Dashboard</h2>
+        </div>
+        <div class="item-group1">
+          <div class="item">
+            <img src="img/home.svg" alt="home" class="icon-svg" />
+            <h3>Home</h3>
+          </div>
+          <div class="item">
+            <img src="img/profile.svg" alt="profile" class="icon-svg" />
+            <h3>Profile</h3>
+          </div>
+          <div class="item">
+            <img src="img/messages.svg" alt="messages" class="icon-svg" />
+            <h3>Messages</h3>
+          </div>
+          <div class="item">
+            <img src="img/tasks.svg" alt="tasks" class="icon-svg" />
+            <h3>Tasks</h3>
+          </div>
+          <div class="item">
+            <img src="img/communities.svg" alt="communities" class="icon-svg" />
+            <h3>Communities</h3>
+          </div>
+        </div>
+        <div class="item-group2">
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+      </div>
+
+      <div class="header">
+        <form class="search-group" id="searchForm">
+          <button type="submit" id="searchButton">
+            <img src="img/magnify.svg" alt="search" class="search-icon" />
+          </button>
+          <input type="text" id="searchInput" maxlength="200" />
+        </form>
+      </div>
+    </div>
+
     <script src="script.js" async defer></script>
   </body>
 </html>
