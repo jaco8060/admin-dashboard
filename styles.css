@@ -238,14 +238,14 @@ body {
     grid-row: 1 / 3;
 }
 h2.projects{
-    font-size: clamp(0.8rem, 2vw, 1.7rem);
+    font-size: clamp(1rem, 3vw, 2rem);
     margin: 5%;
 }
 .project-cards{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    height: 45%;
+    height: 35%;
 }
 .project-card{
     display: flex;
@@ -253,7 +253,10 @@ h2.projects{
     width: 50%;
     height: 100%;
     align-items: center;
-    font-size: clamp(0.6rem, 1.5vw, 1.2rem);
+
+    position: relative; /* Needed for absolute positioning of overlay */
+    cursor: pointer; /* Optional: changes the cursor on hover */
+    
 }
 
 .img-container {
@@ -263,12 +266,42 @@ h2.projects{
     width: 80%;
     height: clamp(8rem, 30vw, 18rem); 
 }
-
+.project-card h3 {
+    margin-top: 5%;
+    font-size: clamp(0.6rem, 2vw, 1.5rem);
+}
 .img-container img {
     width: 100%; /* Maintain the original image width */
     height: 100%; /* Set height to fill the container */
     object-fit: cover; /* Ensures the image covers the area, might crop */
     object-position: 20%; /* Adjusts the focal point slightly to the right of the center */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease, visibility 0.5s; /* Smooth transition for the overlay */
+    visibility: hidden;
+    font-size: clamp(0.6rem, 2vw, 1.5rem); /* Adjust font size as needed */
+    pointer-events: none; /* Allows clicks to pass through */
+}
+
+.project-card:hover .overlay {
+    opacity: 1; /* Show the overlay on hover */
+    visibility: visible;
+}
+
+.project-card:hover .img-container img {
+    filter: blur(8px); /* Blur the image on hover */
 }
 
 @media screen and (max-width: 600px) {
