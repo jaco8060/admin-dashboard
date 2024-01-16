@@ -58,7 +58,8 @@ body {
 }
 .main-container {
     background-color: black;
-    
+    height: 100vh;
+    width: 100vw;
 }
 #dashboard-icon {
     height: 4rem;
@@ -69,11 +70,22 @@ body {
     width: 3rem;
 }
 
+
 /* sidebar content */
 
-#home-icon {
-    height: 3rem;
-    width: 3rem;
+.sidebar {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+/* used to orient containers side by side */
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 4%;
 }
 
 /* header content */
@@ -82,7 +94,6 @@ body {
     background-color: transparent;
     cursor: pointer;
   }
-  
 .search-icon {
     height: 3rem;
     width: 3rem;
