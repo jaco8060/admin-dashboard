@@ -253,8 +253,9 @@ h2.projects{
     width: 50%;
     height: 100%;
     align-items: center;
-
-    position: relative; /* Needed for absolute positioning of overlay */
+    margin: 0% 0 5% 0%;
+    gap: 5%;
+    position: relative; Needed for absolute positioning of overlay
     cursor: pointer; /* Optional: changes the cursor on hover */
     
 }
@@ -267,8 +268,9 @@ h2.projects{
     height: clamp(8rem, 30vw, 18rem); 
 }
 .project-card h3 {
-    margin-top: 5%;
+
     font-size: clamp(0.6rem, 2vw, 1.5rem);
+    text-align: center;
 }
 .img-container img {
     width: 100%; /* Maintain the original image width */
@@ -307,7 +309,7 @@ h2.projects{
 @media screen and (max-width: 600px) {
     .project-card {
         width: 100%; /* Each card takes full width, resulting in one card per row */
-        height: 60%;
+        height: 65%;
         margin: 3%;
     }
 }
