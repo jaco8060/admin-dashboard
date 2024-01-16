@@ -232,6 +232,8 @@ body {
     display: grid;
     grid-template: 1fr 1fr / 2fr 1fr;
 }
+
+/* projects */
 .project-container{
 
     grid-column: 1 / 2;
@@ -313,3 +315,52 @@ h2.projects{
         margin: 3%;
     }
 }
+
+/* annoucements */
+
+.announcements {
+    grid-column: 2 / 3;
+    grid-row: 1/ 2;
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    gap: 2%;
+    justify-content: space-between;
+
+
+}
+.announcements h2{
+    font-size: clamp(0.6rem, 2vw, 1.5rem);
+    margin-top: 3%;
+}
+
+.announcement-card {
+    border: 3px solid #00505a;
+    padding: 6%;
+    border-radius: 10px;
+    height: 100%;
+    background-color: #111827;
+    color: #9ca3af;
+}
+
+.announcement-card h3 {
+    font-size: clamp(0.6rem, 1.5vw, 1.3rem);
+    margin-bottom: 2%;
+}
+
+.announcement-card p {
+    font-size: clamp(0.5rem, 0.8vw, 1rem);
+}
+.announcement-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+hr {
+    height: 2px; /* Thickness of the line */
+    background-color: #8e8e8e; /* Color of the line */
+    border: none; /* Removes default border */
+    margin: 20px 0; /* Space above and below the line */
+}
+
+/* trending */
